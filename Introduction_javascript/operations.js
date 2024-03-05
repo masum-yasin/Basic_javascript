@@ -1,0 +1,14 @@
+var noodles = 210;
+var suger = 310;
+// var totalPrice = noodles+suger;
+// console.log(totalPrice);
+// var subSting = noodles-suger;
+// console.log(subSting);
+// var orangejPrice =50;
+// var quantity = 10;
+// var multiply = 50*10;
+// console.log(multiply); 
+var totalPrice =5500;
+var totalman = 10; 
+var division = 5500/10;
+console.log(division);
