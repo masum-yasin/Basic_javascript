@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="loginForm">
+        <input type="text"name="email" placeholder="Enter your Email"><br>
+        <button type="button" onclick="newForm.showDisplay()">SUBMIT</button>
+    </form>
+    <script>
+        class validation{
+            showDisplay(){
+                this.email=document.loginForm.email.value;
+                let valied=false;
+                let pattern=/[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,3}/;
+                if(this.email.match(pattern)){
+                    valied =true;
+                }
+                else{
+                    alert("Email formated invalied");
+                }
+                if(valied){
+                    alert("All Data valied");
+                }
+            }
+        }
+        let newForm=new validation();
+    </script>
+</body>
+</html>

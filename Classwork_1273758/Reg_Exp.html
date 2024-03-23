@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>javaScript regular expresition</h3>
+    <p id="demo"></p>
+    <script>
+        let text = "Visit  W3SCHOOLS and W3schools w3schools";
+        let pattern = /w3schools/ig;
+        let result = text.match(pattern);
+        document.getElementById("demo").innerHTML= result
+    </script>
+    
+</body>
+</html>

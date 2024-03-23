@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Data with table using Loop</h3>
+    <!-- <script>
+        let cities = ["Dhaka","Khulna","Jessore","Sylhet","Rajshahi","Cumilla"];
+        let table = "<table border=1>";
+            table += "<tr><th>SN</th><th>City</th></tr>"
+            let n = 1
+        for(let i =0; i<cities.length; i++){
+            table += "<tr><td>" + n + "</td>" ; n++
+            table += "<td>" + cities[i]+"</td></tr>"
+
+        }
+        table += "</table>"
+        document.write(table) -->
+    </script>
+    <p id="memo"></p>
+    <script>
+        var fruits = ["Apple","Mango","Jackfruit","Banana","Guave"];
+        table ="<table border=3";
+            table += "<tr><th>SL</th><th>Fruits Name</th></tr>" 
+            n = 1
+
+            for (let i = 0; i<fruits.length; i++){
+                table += "<tr><td>"+ n +"</td>"; n++
+                table += "<td>"+ fruits[i] +"</td></tr>"
+
+
+            }
+            table += "</table>";
+            document.getElementById("memo").innerHTML = table;
+
+
+    </script>
+</body>
+</html>

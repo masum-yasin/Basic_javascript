@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Form Validation</h1>
+    <!-- <form action="" name="loginForm">
+      <input type="email" name="email" placeholder="Enter Email" /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+      /><br />
+      <button type="button" onclick="newForm.checkData()">SUBMIT</button>
+    </form> -->
+
+    <script>
+       class Validation {
+        checkData() {
+          this.email = document.loginForm.email.value;
+          this.password = document.loginForm.password.value;
+
+          let valid = false;
+          let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+          if (this.email.match(pattern)) {
+            valid = true;
+            //     alert(this.email);
+          } else {
+            alert("Email format invalid");
+            valid = false;
+            return false;
+          }
+          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
+          if (this.password.match(pswdpattern)) {
+            valid = true;
+          } else {
+            alert("Password must be 4 to 8 character");
+            valid = false;
+            return false;
+          }
+
+          if (valid) {
+            alert("All Data are validated");
+          }
+        }
+      }
+
+      const newForm = new Validation(); 
+      
+<<<<<<< HEAD
+    </script>
+   <form action="" name="loginForm">
+     <input type="text" name="email" placeholder="Enter your Email"><br>
+     <input type="text" name="password"placeholder="Enter your password"><br>
+     <button type="button" onclick="newForm.checkData()">Submit</button>
+  </form>
+  <script>
+=======
+      
+    // </script>
+    // <form action=""name="loginForm">
+    //   <input type="email" name="email" placeholder="Enter your Email"><br>
+    //   <input type="password" name="password" placeholder="Enter your password"><br>
+    //   <button type="button" onclick="newForm.checkData()">SUBMIT</button>
+    // </form>
+    // <script>
+>>>>>>> 1dd1cf20d6f56a24a6526d9e36729b5ad63cb984
+    class Validation{
+      checkData(){
+        this.email=document.loginForm.email.value;
+        this.password=document.loginForm.password.value;
+<<<<<<< HEAD
+        let valid=false;
+        let pattern=/[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,3}/;
+=======
+        let =false;
+        let pattern =/[a-zA-Z0-9]+@[a-zA-Z+\.[a-zA-Z0-9]{2,3}/;
+>>>>>>> 1dd1cf20d6f56a24a6526d9e36729b5ad63cb984
+        if(this.email.match(pattern)){
+          valid=true;
+        }
+        else{
+          alert("Email format Invailed");
+          valid =false;
+          return false;
+        }
+        let pswdpattern =/[a-zA-Z0-9]/;
+        if(this.password.match(pswdpattern)){
+          valid =true;
+        }
+        else{
+          alert("password must be 4 to 8 character");
+          valid=false;
+          return false;
+        }
+        if(valid){
+          alert("All Data valied");
+        }
+      }
+    }
+<<<<<<< HEAD
+    const newForm = new Validation();
+  </script>
+  
+=======
+    
+    const newForm = new Validation();
+    // </script>
+
+>>>>>>> 1dd1cf20d6f56a24a6526d9e36729b5ad63cb984
+  </body>
+</html>

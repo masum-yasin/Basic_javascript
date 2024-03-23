@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login Form</h3>
+    <form action="" name="myform">
+        <input type="text" name="usename" placeholder="Enter username"><br>
+        <input type="password" name="password" placeholder="enter password"><br>
+        <input type="button" onclick="validate()" value="LOGIN"><br>
+    </form>
+<p id="usename"></p>
+<p id="password"></p>
+    <script>
+        function validate(){
+            validate = false;
+            var usename = document.myform.usename.value;
+            var password =document.myform.password.value;
+            // document.getElementById("usename").innerHTML = usename;
+            // document.getElementById("password").innerHTML=password;
+            if(userName.length<6 || userName==""){
+                validate = false;
+            }
+            else{validate = ture};
+            if(password.length>8 || password==""){
+                validate  = false
+            }
+            else{
+                validate = ture;
+            }
+            if (validate){
+                alert("validated")
+            }
+            else{
+                
+            }
+
+            
+         }
+    
+ </script>
+ <script>
+let 
+ </script>
+    
+</body>
+</html>

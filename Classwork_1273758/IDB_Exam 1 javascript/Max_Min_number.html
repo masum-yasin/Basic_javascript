@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [5,20,50,100,150,300,500,80,90,70,400];
+        let max = array[0];
+        let min = array[0];
+        for(let i= 0;i<array.length; i++){
+            if(array[i]>max){
+                max= array[i];
+            }
+            else {
+                if(array[i]<min){
+                    min=array[i]
+                }
+            }
+        }
+        document.write("<h1> Maximum Number is:"+max+"</h1>");
+        document.write("<h3> The Minimum Number is:"+min+"</h3>")
+    </script>
+</body>
+</html>

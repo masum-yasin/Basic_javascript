@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students =[ "Rayhan","Mizan" , "Kamrul" , "Iqbal", "masum"]
+        var x = 0;
+        document.write("<ul>");
+        while(x<students.length){
+            document.write("<li>");
+                document.write(students[x]);
+                document.write("</li>");
+                    x++;
+
+        }
+        document.write("</ul>");
+            console.log(x);
+       
+    </script>
+    <script>
+        var students = ["Nadia","Mamum","Ikbal", "Tasmia"];
+        document.write("<ol>");
+            for(x=0; x<students.length;x++){
+                document.write("<li>");
+                    document.write(students[x]);
+                    document.write("</li>")
+
+            }
+            document.write("</ol>");
+
+        
+
+        
+    </script>
+    <script>
+        var myDay = prompt("What day is today?", "");
+        switch (myDay){
+            case 'saturday':
+            alert('first day on the week');
+            break;
+            case 'sunday':
+                alert('second day on the week');
+                break;
+                case 'monday':
+                    alert('third day on the week');
+                    case 'friday':
+                        alert('last day on the week');
+                        break;
+        }
+    </script>
+</body>
+</html>

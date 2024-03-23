@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text"name="fname" placeholder="Enter your First Name"><br>
+        <input type="text" name="lname"placeholder="Enter your Last Name"><br>
+        Gender<br>
+        Female<input type="radio" name="Gender" value="Male">
+        Male<input type="radio"name="Gender" value="Female"><br>
+        <textarea name="Address" id="" cols="30" rows="10"></textarea><br>
+        <select name="district" id="">
+            <option value="">select One</option>
+            <option value="">Dhaka</option>
+            <option value="">comilla</option>
+            <option value="">Maymansing</option>
+        </select><br>
+        Language Programming <br>
+        <input type="checkbox"name="React" value="React" class="langs">React
+        <input type="checkbox" name="JQuary" value="JQuary"class="langs">JQuary
+        <input type="checkbox" name="Wordpress"value="Wordpress"class="langs">wordpress
+        <input type="checkbox"name="laravel"value="laravel"class="langs">laravel<br>
+        <button type="button" onclick="displayShow()">New open Window</button>
+        </form>
+        <script>
+            function displayShow(){
+                let fname=document.myform.fname.value;
+                let lname=document.myform.lname.value;
+                let Gender=document.myform.Gender.value;
+                let Address=document.myform.Address.value;
+                let district=document.myform.district.value;
+                const langs =document.getElementsByClassName("langs");
+                let language ="";
+                for(let i=0;i<langs.length;i++){
+                    if(langs[i].checked){
+                        language+=langs[i].value +"";
+                    }
+                }
+               let myWindow = window.open("", "" ,"heigth:300px, width:400px");
+               let message="";
+               message+="<h1> Name:"+fname+""+lname+"<h1>";
+                message+="<p> Address:"+Address+"<p>";
+                    message+= "<p> Gender:"+Gender+"<p>";
+                        message+"<p>District:"+district+"<p>";
+                myWindow.document.write(message);
+
+            }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let letters = "Hello World";
+        let vowels = "";
+        for(let i=0; i<letters.length; ++i){
+            let letter = letters[i];
+            if(/[^aeiou]/i.test(letter)){
+                vowels += letter;
+            }
+        }
+        document.write(vowels)
+        
+    </script>
+    
+</body>
+</html>

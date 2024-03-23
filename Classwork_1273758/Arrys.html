@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script arry</title>
+</head>
+<body>
+    <h3>Array with string Valuses</h3>
+    <script>
+const cars = ["Vovo","Toyota","BMW","Audi"];
+document.write(cars);
+document.write("<br>")
+document.write(cars[0]);
+
+    </script>
+    <h3>Array with Numeric Valunes</h3>
+    <script>
+        const numbers = [5,15,37,57,93,67,82];
+        document.write(numbers);
+        document.write("<br>");
+        document.write(numbers[3]);
+        document.write(numbers["<br>"]);
+        document.write(numbers[6]);
+
+    </script>
+    <h3>Emty Array Declaration adn add content</h3>
+    <script>
+        const fruits = []; //empty array
+        document.write(fruits);
+        fruits[0] = "Mango"
+        fruits[1] = "Jackfruit";
+        fruits[2]= "Lichi";
+
+        document.write(fruits);
+        document.write("<br>")
+        document.write(fruits[1])
+
+    </script>
+    <h3>Array with new keyword</h3>
+    <script>
+        const flowers = new Array("Rose","Belly","waterlily","sunflowr","cosmos" ,"Banana")
+        document.write(flowers);
+        document.write("<br>");
+        
+        //Arry length/number
+        document.write("Number of Elements:" +flowers.length);
+    </script>
+    
+</body>
+</html>

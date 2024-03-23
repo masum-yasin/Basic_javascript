@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sum of all elements using For /of</h3>
+<script>
+    // let data = [10,5,12,15,20];
+    // let total = 0;
+    // for (let item of data){
+    //     total+= item;
+    // }
+    // document.write(total)
+</script>
+<script>
+    let month = ["jan","Feb","Mar","Apr"];
+    let list = "<ul>";
+    for (let item of month){
+        list += "<li>" + item + "</li>";
+      
+    }
+    list += "</ul>"
+    
+</script>
+<div>
+    <script>
+document.write(list)
+    </script>
+</div>
+<h3>sum all elements using  for/of from oject</h3>
+<script>
+    let obj1 = {x:10,y:20,z:30};
+    let total= 0;
+    for (let item of Object.values(obj1)){      //keys(obj1)    values(obj1)
+        total+= item;
+    }
+    document.write(total)
+</script>
+<h3>string of all elements using For /of</h3>
+<script>
+    let text1 = {Apple:10, Banana:20, Mango:30,Jackfruit:40};
+    let text2 = "";
+    for(let item of Object.keys(text1)){
+        text2+= item;
+    }
+    document.write(text2)
+    document.write("<hr>")
+</script>
+<script>
+    const text3 ={Apple:20, Banana:50, Mango:60,Jackfruit:60};
+let text4 = 0;
+    for (const number of Object.values(text3)){
+        text4 += number;
+    }
+    document.write(text4);
+</script>
+<h3>Spread Operator</h3>
+<script>
+     let numbers = [5,6,8,10];
+    let numbers1 = [...numbers,12,15];
+    document.write(numbers1)
+    document.write("<hr>");
+    numbers1[0]=50;
+    document.write("Numbers1 Array" + numbers1)
+    document.write("<hr>");
+    document.write("Number Array" + numbers)
+    document.write("<hr>")
+    let digits = [..."ABCDIFGH"];
+    document.write(digits)
+    console.log(digits);
+</script>
+   
+    
+
+
+    
+</body>
+</html>

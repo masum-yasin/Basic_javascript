@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter your MCQ" id=""><br>
+        <input type="text" name="evi" placeholder="Enter your Evidence" id="" ><br>
+        <input type="text" name="dec" id="" placeholder="Enter your Decription"><br>
+        <button type="button" onclick="showResult()">CLICk</button><br
+</form>
+<script>
+    function showResult(){
+        var mcq = document.result.mcq.value;
+        var evi = document.result.evi.value;
+        var dec = document.result.dec.value;
+        if(mcq>=80 && evi>=60 && dec>=60){
+            alert("you are passed")
+        }
+        alert ("your are failed")
+    }
+</script>
+</body>
+</html>

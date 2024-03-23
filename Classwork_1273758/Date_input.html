@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" name="myform">
+        <input class="form-control" type="date" name="myinput" placeholder="type the date">
+        <button type="button" onclick="showDate()">submit</button>
+    </form>
+    <p id="demo"></p>
+    <script>
+        function showDate(){
+            
+            let x = document.myform.myinput.value;
+            let selecteDate = new Date(x);
+            let day = selecteDate.getDate();
+            let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+            document.getElementById("demo").innerHTML =days[day]
+         }
+        -->
+        
+    </script>
+    <form action="" name="myform">
+        <input type="date" name="myinput"placeholder="date type">
+        <button type="button" onclick="showDate()">CLICK HERE</button>
+     </form>
+     <p id="demo"></p>
+     <script>
+        function showDate(){
+            let date = document.myform.myinput.value;
+            let selecteDate = new Date(date);
+            let day = selecteDate.getMonth();
+            let month =["Jan","Feb","Mar","Apr","May","Jun","JUl","Agu","Sep","Nov","Dec"];
+            
+        
+            document.getElementById("demo").innerHTML = month[day]
+        }
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Normal function</h3>
+    <script>
+        function welcome(){
+            return "Welcome to IsDB-BISEW";
+            
+        }
+        const x = welcome();
+        document.write(x)
+
+    </script>
+    <h3>Arrow  function</h3>
+    <script>
+        
+            const y= (name) => name +", Welcome to IsDB-BISEW";
+            
+        
+        
+        document.write(y("Rayan"));
+        document.write("<br>")
+        
+    </script>
+    <script>
+        const z = (fname,lname) =>"My first name is "+ " "+ fname + " "+  lname;
+        document.write(z("Rayan","kabir"));
+    </script>
+</body>
+</html>

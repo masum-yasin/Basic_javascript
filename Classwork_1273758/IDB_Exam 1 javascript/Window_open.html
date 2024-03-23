@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" name="myform">
+        <input type="text" name="fname" placeholder="First Name"><br>
+        <input type="text" name="lname" placeholder="Last Name"><br>
+        Gender <br>
+        Male: <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female"><br>
+        <textarea name="address" id="" cols="30" rows="5"></textarea><br>
+        <select name="district">
+            <option>Select one</option>
+            <option>Dhaka</option>
+            <option>Rajshahi</option>
+        </select><br>
+        Programming Languages <br>
+        <input type="checkbox" name="php" value="PHP" class="langs"> PHP
+        <input type="checkbox" name="react" value="React" class="langs"> React
+        <input type="checkbox" name="angular" value="Angular" class="langs"> Angular <br>
+        <button type="button" onclick="display()">Show in a new Window</button>
+    </form>
+    <script>
+        function display(){
+           let fname = document.myform.fname.value;
+           let lname = document.myform.lname.value;
+           let address = document.myform.address.value;
+           let gender = document.myform.gender.value;
+           let district = document.myform.district.value;
+           const subject = document.getElementsByClassName("langs");
+            //alert(langs);
+            let languages = "";
+<<<<<<< HEAD
+            for(let i=0; i<langs.length; i++){
+                if(langs[i].checked){
+                languages += langs[i].value + "";
+=======
+            for(let i=0; i<subject.length; i++){
+                if(subject[i].checked){
+                languages += subject[i].value + ",";
+>>>>>>> 1dd1cf20d6f56a24a6526d9e36729b5ad63cb984
+                }
+            }
+           let mywindow = window.open("", "", "height=300, width=400");
+           let message = "";
+           message += "<h1>Name: " + fname + " " + lname + "</h1>";
+           message += "<p>Address: " + address + "</p>";
+           message += "<p>Gender: " + gender + "</p>";
+           message += "<p>District: " + district + "</p>";
+           message += "<p>Languages: " + languages + "</p>";
+           
+           mywindow.document.write(message)
+        }
+    </script> -->
+    <form action=""name="myform">
+        <input type="text" name="fname"placeholder="Enter your first name name"><br><br>
+        <input type="text"name="lname"placeholder="Enter your last Name"><br><br>
+        Gender <br><br>
+        Male <input type="radio" name="gender" id="">
+        Female<input type="radio" name="gender" id=""><br><br>
+        <textarea name="address" id="" cols="30" rows="10"></textarea><br><br>
+        <select name="district" id="">
+            <option>Select One</option>
+            <option>Maymansing</option>
+            <option>Faridpur</option>
+            <option>Dhaka</option>
+            <option>Khulna</option>
+        </select><br><br>
+        <input type="checkbox"name="php"value="php"class="lang">
+        <input type="checkbox"name="react"value="react"class="lang">
+        <input type="checkbox"name="angular"value="angular"class="lang">
+        <input type="checkbox"name="jquary"value="jquary"class="lang"><br><br>
+        <button type="button"onclick="ShowDisplay()">show in a new window</button>
+    </form>
+    <script>
+        function ShowDisplay(){
+            let fname=document.myform.fname.value;
+            let lname=document.myform.lname.value;
+            let address=document.myform.address.value;
+            let Gender=document.myform.gender.value;
+            let district=document.myform.district.value;
+            let subject=document.getElementsByClassName("lang");
+            let languages="";
+            // for(let i=0;i<subject.length;i++){
+            //     if(subject[i].checked){
+            //         languages+=subject[i].value +",";
+            //     }
+            // }
+            let mywindow=window.open("","","height=300,width=400");
+            let messages="";
+            messages+="<h1> Name:" + fname + " "+ lname + "</h1>";
+                messages+="<p> Gender:"+ Gender +"</p>";
+                messages+="<p> Address:"+ address +"</p>";
+                    messages+="<p> District"+ district +"</p>";
+                    messages+="<p> subject:"+languages+"</p>";
+                    mywindow.document.write(messages);
+        }
+        
+    </script>
+</body>
+</html>

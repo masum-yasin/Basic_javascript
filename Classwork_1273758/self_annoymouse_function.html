@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        (function(name){ 
+            // alert("Hellow World");
+            document.getElementById("demo").innerHTML = "Hellow" +" " + name + "This is a annoymous function called by itself "
+
+        }
+        )("Masum");
+    </script>
+</body>
+</html>

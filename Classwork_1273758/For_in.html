@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop</title>
+</head>
+<body>
+    <h3>Iterate data from an Object</h3>
+    <script>
+      const  person = {fname:"Abdur",lname:"Rahim",age:20, address:"Mirpur",Phone:"01920737783",email:"Rahim452@gmail.com"}
+      let output = "";
+      for(let x in person){
+        // alert(person[x])
+        output += person[x] + "    ";
+        
+      }
+      document.write(output);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find largest Number</h3>
+<script>
+    // function findMax(){
+    //    let max = -1;
+    //    for(let i =0; i<arguments.length;i++){
+    //     if(arguments[i]>max){
+    //         max=arguments[i];
+    //     }
+    //    }
+    //    return max
+
+    // }
+    // let first = prompt("Enter 1st number");
+    // first = parseInt(first);
+    // let second = prompt("Enter second number");
+    // second  = parseInt(second);
+    // let third= prompt("Enter third number");
+    // third  = parseInt(third);
+    // let max= findMax(first,second,third);
+    // alert("The maximum Number is "+ max)
+</script>
+<p id="max"></p>
+<script>
+    // function findMax(){
+    //     let max= -1;
+    //     for(let i=0; i<arguments.length; i++){
+    //         if(arguments[i]>max){
+    //             max =arguments[i]
+    //         }
+    //     }
+    // return max
+    // }
+    // let first= parseInt(prompt("Enter first Number",""));
+    // let second= parseInt(prompt("Enter second Number",""));
+    // let third= parseInt(prompt("Enter third Number",""));
+    // let max =findMax(first,second,third);
+    // document.getElementById("max").innerHTML ="The largest Number is :" + max ;
+</script>
+<p id="demo"></p>
+<script>
+    function findMax(){
+        let max = -Infinity;
+        for(var i = 0; i<arguments.length; i++){
+            if(arguments[i]>max){
+                max=arguments[i]
+            }
+            
+        }
+        return max
+    }
+    let first = parseInt(prompt("Enter your First Number",""));
+    let second = parseInt(prompt("Enter your Second Name",""));
+    let third = parseInt(prompt("Enter your third Name",""));
+    let max = findMax(first,second,third);
+    document.getElementById("demo").innerHTML = ("The leargest Number is:"+max)
+</script>
+
+</body>
+</html>

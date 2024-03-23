@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            fullname: function(){
+               return this.firstName +" " + this.lastName
+            }
+        }
+        const student1 = {
+            firstName: "Rayan",
+            lastName : "Khan",
+        }
+        const student2 = {
+            firstName :"Masum",
+            lastName : "Hossain"
+        }
+        let x =student.fullname.call(student2);
+        document.write(x);
+    </script>
+</body>
+</html>

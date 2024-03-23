@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Else If</title>
+</head>
+<body>
+    <!-- <h3>User input and Evalute</h3>
+    <script>
+       let Mynumber = prompt("Enter a number between 1 to 10","")//Good, Average, Excellent
+       if(Mynumber>=8){
+        alert("Excellent")
+       }
+        else if(Mynumber>=5){
+        alert("Average");
+       } else{
+        alert("poor");
+       }
+    </script>
+     -->
+     <script>
+        let Mynumber = prompt("Enter a number between 1 to 10","");
+        Mynumber = parseInt(Mynumber);
+        
+        switch(Mynumber){
+            case 9:
+                alert("Excellent");
+                break;
+                case 8 :
+                    alert("Average");
+                    case 7:
+                        alert("Good");
+                        break;
+                        default:
+                            alert("poor")
+        }
+     </script>
+     <script>
+        let myDay= prompt("What day is today", "");
+     </script>
+</body>
+</html>
